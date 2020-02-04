@@ -29,34 +29,12 @@ html, body {
   overflow: hidden;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
- 
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100vh;
-  width: 80vw;
-}
 
-.container h1 {
-  margin: 0.5em auto;
-  color: #FFF;
-  text-align: center;
-}
 
 .chatbox {
   background-color: Black ;
-  width: 1000px;
-  height: 90%;
+  width: 1025px;
+  height: 92.5%;
   border-radius: 0.2em;
   position: relative;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
@@ -205,20 +183,21 @@ html, body {
 
 <!-- Sidebar -->
 <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:20%">
-    <a href="index1.html" style="height:25%; background-color:#131f1edc; color:#ffffff" class="w3-bar-item w3-button"><br><br><center><i class="material-icons w3-xxxlarge">
+    <a href="index1.html" style="height:25%; background-color:#161818; color:#ffffff" class="w3-bar-item w3-button"><br><br><center><i class="material-icons w3-xxxlarge">
         speed</i> <br> Overview</center></a>
-  <a href="#" style="height:25%; background-color:#131f1edc; color:#ffffff" class="w3-bar-item w3-button"><br><br><center><i class="material-icons w3-xxxlarge">
+  <a href="battery2.html" style="height:25%; background-color:#161818; color:#ffffff" class="w3-bar-item w3-button"><br><br><center><i class="material-icons w3-xxxlarge">
     battery_charging_full
     </i><br>Battery</center></a>
-  <a href="index2.html" style="height:25%; background-color:#131f1edc; color:#ffffff" class="w3-bar-item w3-button"><br><br><center><i class="material-icons w3-xxxlarge">
+  <a href="index2.html" style="height:25%; background-color:#161818; color:#ffffff" class="w3-bar-item w3-button"><br><br><center><i class="material-icons w3-xxxlarge">
     near_me
     </i><br>Map</center></a>
-    <a href="chats.html" style="height:25%; background-color:#131f1edc; color:#ffffff" class="w3-bar-item w3-button"><br><br><center><i class="material-icons w3-xxxlarge">
+    <a href="chats.html" style="height:25%; background-color:#faffff; color:#050505" class="w3-bar-item w3-button"><br><br><center><i class="material-icons w3-xxxlarge">
       message
       </i><br>Chat</center></a></div>
 
 
   <div style="margin-left:22%" style="margin-bottom:40%">
+  	<center><marquee style="color: red;width: 33%;height: 38px;background-color: black"><h3>Warning : Don't Chat While Driving</h3></marquee></center>
     <body>
 <div class='container' ng-cloak ng-app="chatApp">
   <!--<h1>Ev-Local Chats</h1>-->
@@ -260,13 +239,13 @@ html, body {
 
   app.controller('MessageCtrl', function($scope) {
     $scope.messages = [{
-      Name: 'Ben Marcus',
+      Name: 'Anjani',
       Message: "Hi  : )"
     }, {
-      Name: 'Michelle Pepe',
+      Name: 'Anirudh',
       Message: "What's up?"
     }, {
-      Name: 'Ben Marcus',
+      Name: 'Akash',
       Message: "Nothing much, You?"
     }];
   });
